@@ -18,13 +18,13 @@
     <body>
 <%@include file="template/HeaderMenu.jsp" %>
         <div class="container mt-4 bg-white">
-            <h1>Bienvenido al sistema...<strong>${Correo}</strong> </h1>
+            <h1>Bienvenido al sistema...<strong>${NombreUsu}</strong> </h1>
             <a href="alertas.jsp" class="btn btn-info mt-3">Ver alertas de préstamos por vencer</a>
 
-            <% if ("admin".equals(session.getAttribute("rol"))) { %>
+            <% if ("admin".equals(session.getAttribute("Rol"))) { %>
             <div class="mt-3 d-flex gap-2">
                 <a href="Reporte.jsp" class="btn btn-success">Exportar Reporte Mensual</a>
-                <a href="gestionarPersonas.jsp" class="btn btn-warning">Gestionar Usuarios</a>
+                <a href="listarUsuarios.jsp" class="btn btn-warning">Gestionar Usuarios</a>
             </div>
             <% }%>
         </div>

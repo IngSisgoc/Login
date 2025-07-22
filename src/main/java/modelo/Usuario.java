@@ -7,16 +7,26 @@ public class Usuario {
     private String Correo;
     private String Contraseña;
     private String Rol;
+    private String Imagen;
 
     public Usuario() {
     }
 
-    public Usuario(int IdUsuario, String NombreUsu, String Correo, String Contraseña, String Rol) {
+    public Usuario(int IdUsuario, String NombreUsu, String Correo, String Contraseña, String Rol, String Imagen) {
         this.IdUsuario = IdUsuario;
         this.NombreUsu = NombreUsu;
         this.Correo = Correo;
         this.Contraseña = Contraseña;
         this.Rol = Rol;
+        this.Imagen = Imagen;
+    }
+
+    public String getImagen() {
+        return Imagen;
+    }
+
+    public void setImagen(String Imagen) {
+        this.Imagen = Imagen;
     }
 
     public String getNombreUsu() {
@@ -26,8 +36,6 @@ public class Usuario {
     public void setNombreUsu(String NombreUsu) {
         this.NombreUsu = NombreUsu;
     }
-
-
 
     public int getIdUsuario() {
         return IdUsuario;
@@ -61,7 +69,4 @@ public class Usuario {
         this.Rol = Rol;
     }
 
-
-    
-    
 }

@@ -9,9 +9,18 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark" style="color: white">
     <a href="${pageContext.request.contextPath}/Principal.jsp" class="navbar-toggler text-white">
-        <span class="navbar-toggler-icon"></span> Home
+        <span class="navbar-toggler-icon" ></span> Home
     </a>
-    <a href="${pageContext.request.contextPath}/formUsuario.jsp" style="color: white">Mantenimiento</a>
+    <a href="${pageContext.request.contextPath}/Reporte.jsp" class="navbar-toggler text-white">Reportes</a>
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="vistasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Reservas
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="${pageContext.request.contextPath}/reservaLibro.jsp">Nueva Reserva</a></li>
+            <li><a class="dropdown-item" href="${pageContext.request.contextPath}/listarReservas.jsp">Lista de Reservas</a></li>
+        </ul>
+    </div>
     <div class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" id="vistasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Vistas
@@ -37,9 +46,13 @@
     <div>
         <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Cerrar sesión</a>
         <div class="dropdown-menu dropdown-menu-end text-center">
-            <a><img src="img/UsuarioAdministrador.png" height="80" width="80"/></a><br>
-            <a>${nom}</a><br>
-            <a>${correo}</a>
+            <a>
+                <img src="img/perfiles/${Imagen}" height="80" width="80"
+                     style="object-fit: cover; border-radius: 50%;" alt="Foto de usuario"/>
+            </a><br>
+            <a>${NombreUsu}</a><br>
+            <a>${Correo}</a><br>
+            <a>${Rol}</a>
             <div class="dropdown-divider"></div>
             <a href="ControladorUsuario?accion=Salir" class="dropdown-item">Salir</a>
         </div>
