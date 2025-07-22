@@ -22,7 +22,7 @@
             </tr>
         </thead>
         <tbody>
-            <%
+            <%  
                 for (Reserva r : lista) {
             %>
             <tr>
