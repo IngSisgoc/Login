@@ -45,7 +45,7 @@ if (filtro != null && !filtro.trim().isEmpty()) {
 %>
 
 <div class="container mt-4">
-    <h1 class="text-center">Listado de Libros</h1>
+    <h1 class="text-center">Lista de Libros</h1>
     <%--
     <a href="formLibro.jsp" class="btn btn-primary mb-3">Agregar Nuevo Libro</a>
     --%>
