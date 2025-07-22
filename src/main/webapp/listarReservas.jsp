@@ -8,7 +8,7 @@
 %>
 
 <div class="container mt-4">
-    <h2 class="text-center mb-4"><i class="bi bi-book"></i>Listado de Reservas</h2>
+    <h2 class="text-center mb-4"><i class="bi bi-book"></i>Listado de Reservas<i class="bi bi-journal-bookmark-fill"></i></h2>
     
     <table class="table table-striped table-bordered table-hover">
         <thead class="table-dark">
