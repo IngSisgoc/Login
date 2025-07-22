@@ -12,7 +12,7 @@
 %>
 
 <div class="container mt-4">
-    <h2 class="text-center">Reserva de Libros</h2>
+    <h2 class="text-center"><i class="bi bi-book"></i>Reserva de Libros</h2>
 
     <form action="ControladorReserva" method="post" class="row g-3">
         <input type="hidden" name="accion" value="reservar">
