@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="container mt-5 col-md-6">
-            <h2>Registrar Nuevo Usuario</h2>
+            <h2>Registrar nuevo usuario</h2>
 
             <!-- IMPORTANTE: enctype para subir archivos -->
             <form action="ControladorUsuario" method="post" enctype="multipart/form-data">
